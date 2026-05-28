@@ -59,21 +59,23 @@
   </div>
 
   <!--contact n edu info -->
+  <!-- ROW 1: Contact + Education -->
   <div class="grid">
 
     <div class="card">
       <h2>Contact</h2>
-      <div class="contact-row">
+      <div class="contact-row" onclick="copyToClipboard('youremail@gmail.com')" title="Click to copy">
         <img src="https://static.vecteezy.com/system/resources/previews/020/009/614/non_2x/email-and-mail-icon-black-free-png.png" alt="Phone" width="16" height="16"/>
         <a href="mailto:youremail@gmail.com">wannursarina@gmail.com</a>
       </div>
-      <div class="contact-row">
+      <div class="contact-row" onclick="copyToClipboard('019-0000000')" title="Click to copy">
+ 
         <img src="https://cdn-icons-png.flaticon.com/512/15/15407.png" alt="Phone" width="16" height="16"/>
        019-7244425
       </div>
       <div class="contact-row">
         <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" width="16" height="16"/>
-        <a href="https://github.com/wansarina05" target="_blank">github.com/yourusername</a>
+        <a href="https://github.com/user77799" target="_blank">github.com/wannursaria05</a>
       </div>
     </div>
 
@@ -97,7 +99,7 @@
 
   </div>
 
-  <!-- about me/ project/skill -->
+  <!-- ROW 2: About Me + Project and Skill -->
   <div class="grid">
 
     <div class="card">
@@ -144,6 +146,12 @@
   </div>
 
 </div>
-
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+      alert(text + ' copied to clipboard!');
+    });
+  }
+</script>
 </body>
 </html>
